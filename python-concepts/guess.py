@@ -8,7 +8,7 @@ If it's not found, prints that it didn't find it. """
 
 found = False
 secret_num = 7
-# ask_num = int(input('Enter the secret number: '))
+
 for num in range (1,11):
       if num == secret_num:
         #    print(f"You got the secret number right! It's {secret_num}.")
@@ -18,10 +18,3 @@ if not found:
 else:
         print(f"You got the secret number right! It's {secret_num}.")            
  
-
-# guess = 7
-# ask_num = int(input('Enter the secret number: ')) 
-# :
-# while guess == ask_num
-#     print('yeah')
-#     break
