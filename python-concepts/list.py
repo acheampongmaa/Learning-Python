@@ -80,8 +80,71 @@ def sum_and_prod (L):
 
 print(sum_and_prod(L))
 
+"""• Write a function that meets these specs:
+def make ordered list (n) :
+n is a positive int
+Returns a list containing all ints in order
+from O to n (inclusive)"""
+
+a = []
+def make_ordered_list(n):
+    for i in range (n+1):
+        a.append(i)
+    return a
+
+print(make_ordered_list(10))
 
 
+"""
+• Write a function that meets the specification.
+def remove_elem (L, e) :
+L is a list
+e is an object, that's it can be any number 
+Returns a new list with elements in the same order as L,
+but without any elements equal to e.
+L=[1,2,2,2]
+prints (remove_elem(L,2)) #prints [1]
+"""
+
+L=[1,2,2,2]
+newlist=[]
+def remove_elem(L,e):
+    for i in L:
+        if i != e:
+            newlist.append(i)
+    return newlist        
+      
+
+print(remove_elem(L,1))
 
 
+"""   
+• Write a function that meets these specs:
+def count words (sen) :
+sen is a string representing a sentence
+Returns how many words are in s (i.e. a word is a
+sequence of characters between spaces.
+Take a string (sen) like "Hello it's me" and figure out:
+How many space-separated groups (words) it contains.
+print (count words ("Hello it's me"))
+"""
+def count_words(sen):
+      s = len(sen.split(" "))
+      return s
+    # return len(s)
+print (count_words ("Hello it's me"))
 
+
+"""• Write a function that meets these specs:
+def sort words (sen) :
+sen is a string representing a sentence
+Returns a list containing all the words in sen but
+sorted in alphabetical order.
+print (sort words ("look at this photograph") ) """
+
+def sort_words(sen):
+    #   s = list(sen)
+      s = sen.split(" ")
+      s.sort()
+      return s
+print(sort_words ("look at this photograph"))

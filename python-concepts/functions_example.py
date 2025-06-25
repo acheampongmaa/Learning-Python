@@ -79,3 +79,19 @@ def do_twice(n, fn):
 """ fn is a fxn. A lambda fxn will be used """
 lambda x: x**2
 print(do_twice(5, lambda x: x**2))
+
+
+"""• Write a function that meets these specs:
+def make ordered list (n) :
+n is a positive int
+Returns a list containing all ints in order
+from O to n (inclusive)"""
+
+a = []
+def make_ordered_list(n):
+    for i in range (n+1):
+        a.append(i)
+    return a
+
+make_ordered_list(1)
+
